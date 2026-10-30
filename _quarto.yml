@@ -1,10 +1,11 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "dashboards"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
       - about.qmd
