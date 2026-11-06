@@ -39,6 +39,13 @@
     "href": "penguins.html#row-2",
     "title": "Palmer Penguins Dashboard",
     "section": "Row 2",
-    "text": "Row 2\n\nflipper_by_mass &lt;- ggplot(penguins, aes(body_mass_g, flipper_length_mm, color = species)) +\n  geom_point() \n\nggplotly(flipper_by_mass)\n\n\n\n\n\n\nggplot(penguins, aes(body_mass_g, bill_length_mm, color = species)) +\n  geom_point() \n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
+    "text": "Row 2\n\nflipper_by_mass &lt;- ggplot(penguins, aes(body_mass_g, flipper_length_mm, color = species)) +\n  geom_point() \n\nggplotly(flipper_by_mass)\n\n\n\n\n\n\nbill_length_by_mass &lt;- ggplot(penguins, aes(body_mass_g, bill_length_mm, color = species)) +\n  geom_point() \n\nggplotly(bill_length_by_mass)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sample Dashboards Projects",
+    "section": "",
+    "text": "Below are the projects I have worked on this year!\n\nPalmer Penguins Data Dashboard"
   }
 ]

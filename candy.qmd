@@ -43,12 +43,12 @@ list(
 ```
 
 ```{r}
-#| context: valuebox
+#| content: valuebox
 #| title: "Number of Fruity Candies"
 
 list(
-  icon = "basket",
-  color = "warning",
+  icon = "life-preserver",
+  color = "red",
   value = sum(candy$type == "fruity"))
 
 ```
