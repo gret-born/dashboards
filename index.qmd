@@ -1,4 +1,9 @@
 ---
-title: "dashboards"
+title: "Sample Dashboards Projects"
 author: "Greta Bornmann"
+format: html
 ---
+
+Below are the projects I have worked on this year!
+
+- Palmer Penguins Data Dashboard
