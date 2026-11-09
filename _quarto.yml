@@ -3,18 +3,18 @@ project:
   output-dir: docs
 
 website:
-  title: "dashboards"
+  title: "Dashboards"
   navbar:
     right:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: candy.qmd
+        text: Candy Dashboard
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      - minty
     css: styles.css
     toc: true
 

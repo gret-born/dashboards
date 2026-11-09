@@ -1,13 +1,11 @@
 ---
-title: "Candy"
-author: "Greta Bornmann"
+title: "Candy Dashboard"
+author: "Greta Bornmann and Sadie Piianaia"
 date: "11/2/26"
 format: 
   dashboard:
-    theme: sketchy
+    theme: minty
 ---
-
-About this site
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -51,4 +49,11 @@ list(
   color = "red",
   value = sum(candy$type == "fruity"))
 
+```
+
+```{r}
+#Sugar Rush. Does more sugar mean more popular? Make a scatter with a trend line, plus value boxes for the most and least sugary candies.
+
+
+sugar_popular <- ggplot(candy, aes())
 ```

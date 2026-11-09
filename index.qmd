@@ -2,8 +2,18 @@
 title: "Sample Dashboards Projects"
 author: "Greta Bornmann"
 format: html
+toc: false
+about: 
+  template: marquee
+  links:
+  - icon: hypnotize
+    text: Candy
+    href: candy.qmd
+    target: blank
+  - icon: map
+    text: Penguins
+    href: penguins.qmd
+    target: blank
 ---
 
 Below are the projects I have worked on this year!
-
-- Palmer Penguins Data Dashboard
