@@ -33,10 +33,10 @@ candy <- candy |>
 #| content: valuebox
 #| title: "Total Candies"
 
-list(
-  icon = "basket",
-  color = "warning",
-  value = nrow(candy))
+###list(
+ ### icon = "basket",
+  ###color = "warning",
+  ###value = nrow(candy))
 
 ```
 
@@ -44,16 +44,53 @@ list(
 #| content: valuebox
 #| title: "Number of Fruity Candies"
 
-list(
-  icon = "life-preserver",
-  color = "red",
-  value = sum(candy$type == "fruity"))
+###list(
+  ###icon = "life-preserver",
+ ### color = "red",
+ ### value = sum(candy$type == "fruity"))
 
 ```
+
+```{r}
+#| content: valuebox
+#| title: "Most sugary"
+
+highest_sugar <- candy |>
+  slice_max(sugarpercent, n = 1)
+
+list(
+  icon = "boxes",
+  color = "pink",
+  value = paste(highest_sugar$competitorname,
+                highest_sugar$sugarpercent))##
+```
+
+## Row 1
+
+```{r}
+#| content: valuebox
+#| title: "Least Sugary"
+
+
+lowest_sugar <- candy |>
+  slice_min(sugarpercent, n = 1)
+
+list(
+  icon = "boxes",
+  color = "blue",
+  value = paste(lowest_sugar$competitorname,
+                lowest_sugar$sugarpercent))
+```
+
+## Row 2
 
 ```{r}
 #Sugar Rush. Does more sugar mean more popular? Make a scatter with a trend line, plus value boxes for the most and least sugary candies.
 
 
-sugar_popular <- ggplot(candy, aes())
+sugar_popular <- ggplot(candy, aes(sugarpercent, winpercent, color = "pink"))+
+  geom_point() +
+  geom_smooth(method = "lm", color = "lightblue")
+
+ggplotly(sugar_popular)
 ```
